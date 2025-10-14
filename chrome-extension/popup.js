@@ -8,3 +8,13 @@ document.getElementById("checkButton").addEventListener("click", () => {
     }
   });
 });
+document.getElementById("checkButton").addEventListener("click", () => {
+  chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
+    const url = tab.url || "";
+    const isOfficial = /\.steampowered\.com$|(^|\.)steamcommunity\.com$/i.test(new URL(url).hostname);
+    const looksLogin = /(login|sign[\s\-]?in|authenticate)/i.test(url);
+    alert(isOfficial ? "✅ Official Steam domain" :
+          looksLogin  ? "⚠️ Possible phishing: off-domain login flow" :
+                        "ℹ️ No obvious login flow detected");
+  });
+});
