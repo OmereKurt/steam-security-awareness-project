@@ -26,4 +26,33 @@ N/A
    git clone https://github.com/OmereKurt/steam-security-awareness-project.git
 2. Open Chrome and navigate to:
    chrome://extensions/
+3. Enable Developer Mode in the top right
+4. Click Load Unpacked and select the /chrome-extension folder
+5. Visit a test phishing site (e.g., a fake Steam login page) to see the detection banner in action
+
+##🧪 Example
+
+N/A
+
+##⚙️ Tech Stack
+- JavaScript (Chrome Manifest V3)
+- Chrome Extensions API
+- HTML/CSS
+- URL & SSL Analysis
+- BlueCat, VirusTotal, and Splunk (for enrichment and research)
+
+##🔮 Future Enhancements
+- Integrate VirusTotal API for real-time domain reputation checks
+- Implement machine learning–based phishing URL detection
+- Expand domain detection rules via community-sourced datasets
+- Create an awareness dashboard summarizing detection activity
+
+##📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+##👤 Author
+Omer Kurt
+Cybersecurity student passionate about threat detection, incident response, and phishing defense.
+Connect on LinkedIn
+ • GitHub
 
