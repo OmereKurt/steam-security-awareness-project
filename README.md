@@ -24,3 +24,6 @@ N/A
 1. Clone this repository:  
    ```bash
    git clone https://github.com/OmereKurt/steam-security-awareness-project.git
+2. Open Chrome and navigate to:
+   chrome://extensions/
+
