@@ -17,32 +17,10 @@ This project was developed as part of a cybersecurity awareness initiative explo
 - Browser-based phishing detection and countermeasures  
 
 ## 🧩 Repository Structure
-steam-security-awareness-project/  
-├── chrome-extension/      # Chrome extension source code  
-│   ├── manifest.json  
-│   ├── background.js  
-│   ├── content.js  
-│   ├── popup.html  
-│   ├── popup.js  
-│   ├── icons/  
-│   │   ├── icon16.png  
-│   │   ├── icon48.png  
-│   │   └── icon128.png  
-│   ├── detection-rules/  
-│   │   └── suspicious_domains.txt  
-│   ├── phishing-samples/  
-│   │   └── sample_urls.txt  
-│   └── README.md  
-│  
-├── docs/                  # Documentation and demo images  
-│   ├── demo.png  
-│   └── README.md  
-│  
-├── .gitignore  
-├── LICENSE  
-└── README.md  
+
+N/A
 
 ## 💻 Installation
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/steam-security-awareness-project.git
+   git clone https://github.com/OmereKurt/steam-security-awareness-project.git
