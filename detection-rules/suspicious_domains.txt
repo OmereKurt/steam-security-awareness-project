@@ -1,1 +1,1 @@
-
+const looksLogin = /(login|sign[\s\-]?in|authenticate)/i.test(urlText);
