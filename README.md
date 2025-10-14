@@ -14,3 +14,30 @@ It includes a **Chrome extension** that detects fraudulent Steam login pages usi
 Part of a cybersecurity awareness initiative exploring **credential theft**, **social engineering**, and **browser-based phishing detection.**
 
 ## 🧩 Repository Structure
+steam-security-awareness-project/
+│
+├── chrome-extension/
+│   ├── detection-rules/
+│   │   └── suspicious_domains.txt
+│   │
+│   ├── icons/
+│   │   ├── icon128.png
+│   │   ├── icon16.png
+│   │   └── icon48.png
+│   ├── phishing-samples/
+│   │   └── sample_urls.txt
+│   │
+│   ├── README.md
+│   ├── background.js
+│   ├── content.js
+│   ├── manifest.json
+│   ├── popup.html
+│   └── popup.js
+│
+├── docs/
+│   ├── README.md
+│   └── demo.png
+│
+├── .gitignore
+├── LICENSE
+└── README.md
