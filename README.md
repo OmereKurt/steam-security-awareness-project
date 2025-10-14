@@ -30,7 +30,7 @@ N/A
 4. Click Load Unpacked and select the /chrome-extension folder
 5. Visit a test phishing site (e.g., a fake Steam login page) to see the detection banner in action
 
-##🧪 Example
+## 🧪 Example
 
 N/A
 
