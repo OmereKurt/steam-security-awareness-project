@@ -13,4 +13,3 @@ const isSuspicious = suspiciousPatterns.some(pattern =>
 if (isSuspicious) {
   alert("⚠️ Warning: This website may be a fake Steam login page!\nAlways verify the URL before signing in.");
 }
-
