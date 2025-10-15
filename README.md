@@ -30,9 +30,14 @@ N/A
 4. Click Load Unpacked and select the /chrome-extension folder
 5. Visit a test phishing site (e.g., a fake Steam login page) to see the detection banner in action
 
-## 🧪 Example
+## 🔍 Example: Phishing Detection in Action
 
-N/A
+When visiting a fake Steam login page, the Chrome extension displays a warning banner to alert the user:
+
+![Phishing Alert Example](assets/example-warning.png)
+
+⚠️ *The banner appears on suspicious Steam login pages that do not belong to official domains like `steampowered.com` or `steamcommunity.com`.*
+
 
 ## ⚙️ Tech Stack
 - JavaScript (Chrome Manifest V3)
