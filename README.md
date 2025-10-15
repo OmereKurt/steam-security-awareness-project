@@ -34,7 +34,7 @@ N/A
 
 When visiting a fake Steam login page, the Chrome extension displays a warning banner to alert the user:
 
-![Phishing Alert Example](assets/example-warning.png)
+
 
 ⚠️ *The banner appears on suspicious Steam login pages that do not belong to official domains like `steampowered.com` or `steamcommunity.com`.*
 
