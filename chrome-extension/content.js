@@ -26,30 +26,46 @@
   }
 
   function showBanner() {
-    const bar = document.createElement("div");
-    bar.style = `
-      position:fixed;top:0;left:0;right:0;z-index:2147483647;
-      padding:12px 16px;background:#ffb703;color:#111;
-      font:600 14px system-ui;box-shadow:0 2px 8px rgba(0,0,0,.15);
-      display:flex;align-items:center;justify-content:space-between;
-    `;
-    bar.innerHTML = `
-      <span>⚠️ <b>Phishing alert:</b> This page may imitate Steam. Check the URL before entering your credentials.</span>
-      <span>
-        <a href="https://github.com/YOUR_USERNAME/steam-security-awareness-project" target="_blank"
-          style="color:#0645ad;text-decoration:underline;margin-right:10px">Learn more</a>
-        <button id="dismiss-btn"
-          style="padding:5px 10px;border:none;background:#fff;border-radius:4px;cursor:pointer;font-weight:500">Dismiss</button>
-      </span>
-    `;
-    document.documentElement.appendChild(bar);
+  const bar = document.createElement("div");
+  bar.style = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2147483647;
+    padding: 14px 20px;
+    background: linear-gradient(90deg, #f44336, #ff9800);
+    color: #fff;
+    font: 600 14px 'Segoe UI', system-ui;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  `;
 
-    const btn = bar.querySelector("#dismiss-btn");
-    btn.onclick = () => bar.remove();
+  const text = document.createElement("span");
+  text.textContent =
+    "⚠️ Phishing Alert: This page may be impersonating Steam. Verify the URL before logging in.";
 
-    // Auto-hide after 12 seconds
-    setTimeout(() => {
-      if (bar && document.contains(bar)) bar.remove();
-    }, 12000);
-  }
-})();
+  const btn = document.createElement("button");
+  btn.textContent = "Dismiss";
+  btn.style = `
+    margin-left: 16px;
+    background: #fff;
+    color: #222;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+  `;
+  btn.onmouseover = () => (btn.style.background = "#eee");
+  btn.onmouseout = () => (btn.style.background = "#fff");
+  btn.onclick = () => bar.remove();
+
+  bar.appendChild(text);
+  bar.appendChild(btn);
+  document.documentElement.appendChild(bar);
+}
